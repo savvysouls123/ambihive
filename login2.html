@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head><script src="https://kit.fontawesome.com/a26338920d.js" crossorigin="anonymous"></script><title>LOGIN PAGE</title></head>
+<br><br><br><br><br><br>
+<body style="background-color:#EBBC95; background-image:url('todo.jpg'); background-size:cover;">
+<script>
+function validation()
+{
+var n, m;
+n=document.forms["login"]["un"].value;
+m=document.forms["login"]["pass"].value;
+if(n=="")
+{
+window.alert("Please  enter a username.");
+}
+if(m=="")
+{
+window.alert("Please enter a password.")
+}
+}
+</script>
+<h1 style="text-align:center; font-size:50px; color: white">LOGIN</h1>
+<form style="max-width: 15em; margin: auto; background-color:#C3B1E1; background-image:url('back.jpg'); background-size:cover; border: solid 3px #3B2F2F;" name="login">
+<fieldset><legend style="text-align:center; font-size:40px; color: #3F000F"><b><i class="fa-solid fa-user"></i></b></legend><br>
+<br>
+<label><b>USER NAME</b></label</br>
+<input type="text" name="un" id="un"></br><br>
+<label><b>PASSWORD</b></label></br>
+<input type="password" name="pass" id="pass"></br><br><br><br><br>
+</fieldset>
+</form>
+<a href="AmbiHive.html"><button onclick="validation()" type="submit" name="submit" style="position:absolute; right:706px; top: 460px; font-size:30px; background-color:#3D3635; color:white; border:solid 2px #2B1B17; border-radius: 8px">SUBMIT</button></a></br><br>
+<a href="register2.html"><i style="position:absolute; right:570px; top: 560px; font-size:30px; color:#306EFF;">Dont have an account? Sign Up</i></a><br>
+<a href="forgot.html"><i style="position:absolute; right:660px; top: 530px; font-size:30px; color:#306EFF">Forgot Password</i></a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a26338920d.js" crossorigin="anonymous"></script>
+<title>PASSWORD RESET</title>
+</head>
+<body style="background-color:#EBBC95; background-image:url('todo.jpg'); background-size:cover;";>
+<script>
+function confirm()
+{
+var n, m;
+n=document.forms["forgot"]["pass"].value;
+m=document.forms["forgot"]["passcon"].value;
+if(n!=m)
+{
+window.alert("Your password doesnt match.");
+}
+else
+{
+window.alert("Password reset successfully.");
+}
+}
+</script>
+<br><br><br><br><br><br>
+<h1 style="text-align:center; font-size:50px; color: white"> PASSWORD RESET</h1>
+<form name="forgot" style="max-width: 14em; margin: auto; background-color: #AEC6CF; background-image:url('back.jpg'); background-size:cover; border: solid 3px #3B2F2F;">
+<fieldset><legend style="text-align:center; font-size:40px; color: #3F000F" "><b><i class="fa-solid fa-unlock-keyhole"></i></b></legend>
+<br><label><b>OTP</b></label><br>
+<input type="text" value="123456" name="OTP"></br><br>
+<label><b>NEW PASSWORD</b></label></br>
+<input type="password" name="pass"></br><br>
+<label><b>CONFIRM PASSWORD</b></label><br>
+<input type="password" name="passcon"><br><br><br><br><br>
+</fieldset>
+</form>
+<a href="login2.html"><button style="position:absolute; right:706px; top: 499px; font-size:30px; background-color:#3D3635; color:white; border: solid 2px #2B1B17; border-radius: 8px;" onclick="confirm()">SUBMIT</button></a></br><br>
+</body>
+</html>
